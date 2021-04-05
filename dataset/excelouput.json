@@ -1,8 +1,8 @@
 {
-	"name": "AzureSqlTable3",
+	"name": "excelouput",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureSqlDatabase1",
+			"referenceName": "AzureSqlDatabaseexcel",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
@@ -14,7 +14,7 @@
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "HumanResource",
+			"schema": "Excel",
 			"table": {
 				"value": "@dataset().tname",
 				"type": "Expression"
