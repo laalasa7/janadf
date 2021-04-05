@@ -7,7 +7,8 @@
 		},
 		"parameters": {
 			"tname": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "@{item().name}"
 			}
 		},
 		"annotations": [],
@@ -15,7 +16,10 @@
 		"schema": [],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "@{item().departmentId}"
+			"table": {
+				"value": "@dataset().tname",
+				"type": "Expression"
+			}
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
