@@ -1,5 +1,5 @@
 {
-	"name": "AzureSqlTable1",
+	"name": "AzureSqlTable3",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDatabase1",
@@ -14,9 +14,11 @@
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "dbo",
-			"table": "@{item().departmentId}"
+			"schema": "HumanResource",
+			"table": {
+				"value": "@dataset().tname",
+				"type": "Expression"
+			}
 		}
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+	}
 }

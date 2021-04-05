@@ -1,5 +1,5 @@
 {
-	"name": "SqlServerTable2",
+	"name": "SqlServerTable3",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "SqlServerADWorks",
@@ -7,10 +7,6 @@
 		},
 		"annotations": [],
 		"type": "SqlServerTable",
-		"schema": [],
-		"typeProperties": {
-			"schema": "HumanResources",
-			"table": "Department"
-		}
+		"schema": []
 	}
 }
