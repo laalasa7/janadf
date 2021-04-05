@@ -1,0 +1,9 @@
+{
+	"name": "LaalasaADF1",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a39ba99a-7842-41f0-8b6e-f61bb33d20f4",
+		"tenantId": "cd90d295-37df-427f-b4a8-1ebb3645664a"
+	}
+}
