@@ -1,0 +1,17 @@
+{
+	"name": "SqlServerADWorks",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=LAPTOP-A3EDGH7A\\LAALASA;initial catalog=AdventureWorks2012",
+			"userName": "LAPTOP-A3EDGH7A\\LAALASA",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1MDUyMzBmNC0wNmNjLTQ4ODgtYTU4Mi02ZWVkMTNkMmFhNTIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "DemoOnPremIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
