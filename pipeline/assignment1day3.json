@@ -18,7 +18,7 @@
 					"source": {
 						"type": "SqlServerSource",
 						"sqlReaderQuery": {
-							"value": "SELECT Name\n  FROM [AdventureWorks2012].[HumanResources].[Department]",
+							"value": "SELECT Name,DepartmentID\n  FROM [AdventureWorks2012].[HumanResources].[Department]",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
@@ -65,7 +65,7 @@
 								"source": {
 									"type": "SqlServerSource",
 									"sqlReaderQuery": {
-										"value": "select * from humanresources.EmployeeDepartmentHistory where departmentid=@{item().name}",
+										"value": "select * from humanresources.EmployeeDepartmentHistory where departmentid=@{item().departmentid}",
 										"type": "Expression"
 									},
 									"queryTimeout": "02:00:00",
